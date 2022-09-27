@@ -4,12 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Азимут Телеком</title>
+    <title>Телематические системы | Азимут Телематика </title>
+    <meta name="description" content="Телематические системы для установки видеонаблюдения на автомобили.">
 </head>
 <body>
-    <h1>Азимут телеком</h1>
-    <p>Сервис по предоставлению подключения к системе ГЛОНАСС</p>
-    <h2>Подключение под ключ</h2>
-    <h1>29 990 руб. <span style="text-decoration: line-through;">39 990</span></h1>
+    <style>
+        *{margin: 0; padding: 0;}
+        html{width: 100%; font-family: montserrat; font-size: 20px;}
+        body{display: flex; align-items: center; justify-content: space-around; flex-direction: column;}
+
+        header{height: 48px; width: 100%; display: flex; flex-direction: column;}
+        header>.top{background-color: #3333FF; width: 100%; height: 100%;align-items: center;justify-content: space-around; display: flex; color: #fff;}
+        .bottom>p{position: relative;}
+        .bottom>p::after {position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; right: 0; width: 100%; background: #3333FF;}
+        .bottom{display: flex; justify-content: space-between; width: 80%;align-items: center;height: 32px;}
+        .bottom>a{position: relative;}
+        .bottom>a::after{position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; right: 0; width: 0%; background: #3333FF;}
+        .bottom>a:hover::after{position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; width: 100%; background: #3333FF; transition: 0.5s;}
+
+        .main{display: flex; align-items: center; width: 80%; justify-content: space-around; flex-direction: column;}
+
+        .landing{height: 62vh; width: 100%; display: flex; justify-content: space-between; margin: 64px 0 0 0;}
+        .landing>.img{height: 512px; width: 60%; background-position: center; background-size: contain; background-repeat: no-repeat;}
+        .landing>.title{height: 100%; display: flex; flex-direction: column; justify-content: space-around;}
+        .title>a{width: 80%; padding:16px; display: flex; align-items: center; justify-content: space-around; border: #3333FF double 5px; border-radius: 16px;}
+        .title>h1>span{text-decoration: 5px underline double  #3333FF;text-decoration-thickness: 1px;}
+
+        .about{width: 100%; height: auto;}
+        .about>.image{width: 100%; height: 340px; background-position: center;background-size: contain; background-repeat: no-repeat;}
+
+        .contact{display: flex; margin: 64px 0 0 0 ;}
+        .contact>.desc{text-align: right; padding: 32px;}
+        .contact>.desc>h2{padding:0 0 32px 0 ;}
+        .contact>.desc>p{opacity: 0.8;}
+        .contact>.map{width: 340px; height: 340px; background-position: center;background-size: contain; background-repeat: no-repeat;}
+
+        .link{display: flex; width: 100%; justify-content: space-between; margin: 64px 0 64px;}
+        .link>a{display: flex; flex-direction: column; align-items: center;}
+        .link svg{width: 64px; height: 64px; margin: 32px;}
+
+        a:any-link{text-decoration: none; color: inherit}
+        a:hover{opacity: 0.62;}
+
+        @media screen and (max-width:100vh) {
+            
+        }
+    </style>
+    <header>
+        <div class="top">
+            <a href="tel:+79210945180">+7 921 094 51 80</a>
+            <svg width="32" height="32" viewBox="0 0 280 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_70_2465)">
+            <path d="M89.2575 154.571C87.9432 155.943 86.6289 157.2 85.3146 158.571C87.486 159.086 89.7146 159.657 91.886 160.171C90.9146 158.343 90.0003 156.514 89.2575 154.571ZM89.2575 154.571C87.9432 155.943 86.6289 157.2 85.3146 158.571C87.486 159.086 89.7146 159.657 91.886 160.171C90.9146 158.343 90.0003 156.514 89.2575 154.571ZM139.657 66.9714C109.029 67.1429 83.3718 87.7143 75.486 115.829C73.886 121.657 72.9718 127.886 73.0289 134.286C73.1432 152.914 80.8003 169.714 93.1432 181.771C105.315 193.714 122 200.971 140.343 200.857C163.657 200.743 184.115 188.743 195.943 170.629C198.857 166.343 201.143 161.771 202.915 156.857C205.543 149.6 206.972 141.714 206.915 133.6C206.743 96.5714 176.629 66.8 139.6 66.9714H139.657ZM140.286 188.686C131.6 188.686 123.257 186.686 115.886 183.086C105.715 178.114 97.3146 170.057 91.886 160.114C90.9146 158.286 90.0003 156.457 89.2575 154.514C86.686 148.286 85.2575 141.314 85.2003 134.171C85.1432 119.943 90.5146 106.857 99.4289 97.0857C109.372 86.0572 123.657 79.2 139.715 79.0857C155.772 78.9714 170.8 86.1143 180.857 97.4286C189.486 107.029 194.743 119.714 194.8 133.6C194.857 145.371 191.2 156.286 184.915 165.2C175.143 179.314 158.8 188.571 140.286 188.686ZM89.2575 154.571C87.9432 155.943 86.6289 157.2 85.3146 158.571C87.486 159.086 89.7146 159.657 91.886 160.171C90.9146 158.343 90.0003 156.514 89.2575 154.571Z" fill="white"/>
+            <path d="M127.772 127.886L109.601 140.172L103.601 158.457L79.1435 140.343C78.2864 135.829 75.7721 119.829 85.0292 103.772C90.9149 93.6573 98.8578 88.0573 103.201 85.4287L121.544 103.6L127.772 127.943V127.886Z" fill="white"/>
+            <path d="M140.115 158.286L128.115 194.858L122.001 188.8L103.658 170.629L97.9434 154.058C105.886 153.486 113.829 152.858 121.772 152.286L140.058 158.286H140.115Z" fill="white"/>
+            <path d="M200.858 133.6C200.858 157.772 185.886 173.257 182.8 176.286L164.4 152.057V139.886L182.572 133.715L170.343 127.715L158.229 133.886H146.058L152.058 115.657L166.458 109.657L176.229 85.0859C178.8 87.0288 200.858 104.229 200.8 133.657L200.858 133.6Z" fill="white"/>
+            <path d="M138.912 0.0149207L139.655 0.0110205C142.798 -0.00548013 145.383 2.55241 145.399 5.69523L145.56 36.4948L133.389 36.5587L133.228 5.75913C133.212 2.61632 135.77 0.0314213 138.912 0.0149207Z" fill="white"/>
+            <path d="M90.2601 6.38414L127.174 6.19086L127.301 30.5334L90.3876 30.7267C87.2447 30.7431 84.6599 28.1852 84.6434 25.0424L84.5758 12.1283C84.5594 8.98545 87.1173 6.4006 90.2601 6.38414Z" fill="white"/>
+            <path d="M151.515 6.06348L188.428 5.87019C191.571 5.85374 194.156 8.41167 194.173 11.5545L194.24 24.4686C194.257 27.6114 191.699 30.1963 188.556 30.2127L151.642 30.406L151.515 6.06348Z" fill="white"/>
+            <path d="M127.371 48.7432L133.428 42.6289H145.6L151.714 48.6289C151.257 49.2575 147.028 54.7432 139.6 54.8003C138.857 54.8003 131.885 54.7432 127.371 48.8003V48.7432Z" fill="white"/>
+            <path d="M54.2857 55.2003C61.0078 55.2003 66.4571 49.7509 66.4571 43.0289C66.4571 36.3068 61.0078 30.8574 54.2857 30.8574C47.5636 30.8574 42.1143 36.3068 42.1143 43.0289C42.1143 49.7509 47.5636 55.2003 54.2857 55.2003Z" fill="white"/>
+                <path d="M224.743 54.3429C231.465 54.3429 236.914 48.8935 236.914 42.1714C236.914 35.4493 231.465 30 224.743 30C218.021 30 212.571 35.4493 212.571 42.1714C212.571 48.8935 218.021 54.3429 224.743 54.3429Z" fill="white"/>
+                <path d="M55.314 243.942C62.0361 243.942 67.4854 238.493 67.4854 231.771C67.4854 225.049 62.0361 219.6 55.314 219.6C48.5919 219.6 43.1426 225.049 43.1426 231.771C43.1426 238.493 48.5919 243.942 55.314 243.942Z" fill="white"/>
+                <path d="M225.714 243.028C232.436 243.028 237.886 237.579 237.886 230.857C237.886 224.135 232.436 218.686 225.714 218.686C218.992 218.686 213.543 224.135 213.543 230.857C213.543 237.579 218.992 243.028 225.714 243.028Z" fill="white"/>
+                <path d="M110.171 268C116.894 268 122.343 262.551 122.343 255.829C122.343 249.107 116.894 243.657 110.171 243.657C103.449 243.657 98 249.107 98 255.829C98 262.551 103.449 268 110.171 268Z" fill="white"/>
+                <path d="M171.085 267.657C177.808 267.657 183.257 262.208 183.257 255.486C183.257 248.764 177.808 243.314 171.085 243.314C164.363 243.314 158.914 248.764 158.914 255.486C158.914 262.208 164.363 267.657 171.085 267.657Z" fill="white"/>
+                <path d="M267.829 145.429C274.551 145.429 280 139.979 280 133.257C280 126.535 274.551 121.086 267.829 121.086C261.107 121.086 255.657 126.535 255.657 133.257C255.657 139.979 261.107 145.429 267.829 145.429Z" fill="white"/>
+                <path d="M12.1714 146.743C18.8935 146.743 24.3429 141.294 24.3429 134.572C24.3429 127.85 18.8935 122.4 12.1714 122.4C5.44933 122.4 0 127.85 0 134.572C0 141.294 5.44933 146.743 12.1714 146.743Z" fill="white"/>
+                <path d="M24.1138 98.0001C30.8359 98.0001 36.2852 92.5508 36.2852 85.8287C36.2852 79.1066 30.8359 73.6572 24.1138 73.6572C17.3917 73.6572 11.9424 79.1066 11.9424 85.8287C11.9424 92.5508 17.3917 98.0001 24.1138 98.0001Z" fill="white"/>
+                <path d="M255.372 96.7999C262.094 96.7999 267.543 91.3506 267.543 84.6285C267.543 77.9064 262.094 72.457 255.372 72.457C248.65 72.457 243.2 77.9064 243.2 84.6285C243.2 91.3506 248.65 96.7999 255.372 96.7999Z" fill="white"/>
+                <path d="M249.829 194.229C256.551 194.229 262 188.779 262 182.057C262 175.335 256.551 169.886 249.829 169.886C243.107 169.886 237.657 175.335 237.657 182.057C237.657 188.779 243.107 194.229 249.829 194.229Z" fill="white"/>
+                <path d="M24.6285 201.485C31.3506 201.485 36.7999 196.036 36.7999 189.314C36.7999 182.592 31.3506 177.143 24.6285 177.143C17.9064 177.143 12.457 182.592 12.457 189.314C12.457 196.036 17.9064 201.485 24.6285 201.485Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_70_2465">
+                <rect width="280" height="268" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                <a href="mailto:info@azimutelematika.ru">info@azimutelematika.ru</a>
+        </div>
+    </header>
+    <div class="bottom">
+        <p>Главная</p>
+        <a href="monitoring/">Мониторинг</a>
+        <a href="pp2216/">ПП 2216</a>
+        <a href="pp909/">ПП 909</a>
+        <a href="rnis/">РНИС</a>
+        <a href="contact/">Контакты</a>
+    </div>
+    <div class="main">
+        <div class="landing">
+            <div class="img" style="background-image: url(0.png);"></div>
+            <div class="title">
+                <h1><span>Подключение</span> <br>системы <br>навигации</h1>
+                <a href="contact/">ЗАКАЗАТЬ</a>
+            </div>
+        </div>
+        <div class="about">
+            <div class="image" style="background-image: url(2.png);"></div>
+            <div class="image" style="background-image: url(6.png);"></div>
+            <div class="image" style="background-image: url(3.png); margin: 64px 0 64px;"></div>
+            <div class="image" style="background-image: url(4.png); height: 256px; margin: 64px 0 64px;"></div>
+        </div>
+        <div class="contact">
+            <div class="desc">
+                <h2>Контакты</h2>
+                <h3>Дмитрий Владимирович</h3>
+                <p>Руководитель</p>
+            </div>
+            <div class="map" style="background-image: url(5.png);"></div>
+        </div>
+        <div class="link">
+            <a href="tel:+79210945180">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16"><path d="M21.98,1.72c-.14-.97-.98-1.72-1.98-1.72H2C1,0,.16,.75,.02,1.72c-.01,.09-.02,.18-.02,.28V14c0,1.1,.9,2,2,2H20c1.1,0,2-.9,2-2V2c0-.1-.01-.19-.02-.28Zm-1.48,12.28c0,.28-.22,.5-.5,.5H2c-.28,0-.5-.22-.5-.5V4.33l9.5,5.54,9.5-5.54V14Zm0-11.41l-9.5,5.54L1.5,2.59v-.59c0-.28,.22-.5,.5-.5H20c.28,0,.5,.22,.5,.5v.59Z"/></svg>
+                <p>+7 921 094 51 80</p>
+            </a>
+            <a href="mailto:info@azimutelematika.ru">
+                <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><g id="a"/><g id="b"><g id="c"><path d="M13.63,18c-.96,0-1.92-.36-2.65-1.1L1.1,7.01C-.37,5.55-.37,3.18,1.1,1.72L2.16,.66c.88-.88,2.3-.88,3.18,0l2.12,2.12c.88,.88,.88,2.3,0,3.18l-.53,.53,4.59,4.59,.53-.53c.88-.88,2.3-.88,3.18,0l2.12,2.12c.88,.88,.88,2.3,0,3.18l-1.06,1.06c-.73,.73-1.69,1.1-2.65,1.1ZM3.74,1.5c-.19,0-.38,.07-.53,.22l-1.06,1.06c-.88,.88-.88,2.3,0,3.18L12.04,15.85c.88,.88,2.3,.88,3.18,0l1.06-1.06c.29-.29,.29-.77,0-1.06l-2.12-2.12c-.29-.29-.77-.29-1.06,0l-1.59,1.59L4.8,6.48l1.59-1.59c.29-.29,.29-.77,0-1.06L4.27,1.72c-.15-.15-.34-.22-.53-.22Z"/></g></g></svg>
+                <p>info@azimutelematika.ru</p>
+            </a>
+            <a href="https://yandex.ru/maps/2/saint-petersburg/house/prospekt_kultury_41/Z0kYdQ9pT0ABQFhqfXx0cn5hYA==/?indoorLevel=1&ll=30.389656%2C60.053225&z=17.05">
+                <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.58 20"><g id="a"/><g id="b"><g id="c"><g><path d="M7.79,1.5c.61,0,1.19,.07,1.75,.22,1.98,.52,3.51,1.92,4.18,3.83,.69,1.94,.37,4.09-.84,5.76l-5.09,6.99L2.7,11.32c-1.22-1.67-1.53-3.82-.84-5.76,.68-1.91,2.2-3.31,4.18-3.83,.55-.15,1.14-.22,1.75-.22m0-1.5c-.74,0-1.45,.09-2.13,.27C.37,1.67-1.65,7.89,1.49,12.2l5.31,7.3c.24,.33,.61,.5,.99,.5s.75-.17,.99-.5l5.31-7.3C17.23,7.89,15.21,1.67,9.92,.27c-.68-.18-1.39-.27-2.13-.27h0Z"/><path d="M7.79,11.28c-1.93,0-3.5-1.57-3.5-3.5s1.57-3.5,3.5-3.5,3.5,1.57,3.5,3.5-1.57,3.5-3.5,3.5Zm0-5.5c-1.1,0-2,.9-2,2s.9,2,2,2,2-.9,2-2-.9-2-2-2Z"/></g></g></g></svg>
+                <p>Проспект Культур, 41</p>
+            </a>
+        </div>
+
+    </div>
+    <footer style="height: 64px; width:100%; background-color: #000; display: flex; align-items: center; justify-content: center; text-indent: 8px; font-size:18px"><a href="https://rohhthone.com/privacy" style=" color: #fff;">privacy</a><a href="https://rohhthone.com" style=" color: #fff;"> by rohh thone</a></footer>
 </body>
 </html>
