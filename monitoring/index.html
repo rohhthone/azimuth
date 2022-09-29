@@ -38,9 +38,27 @@
         a:any-link{text-decoration: none; color: inherit}
         a:hover{opacity: 0.62;}
 
-
+        .phone{display: none;}
 
         @media screen and (max-width:100vh) {
+            .desktop{display: none;}
+            .phone{display: flex;}
+
+            header>.top{flex-direction: column; font-size: 18px;}
+            html{font-size: 18px;}
+            .top>svg{display: none;}
+            .bottom{width: 90%; font-size: 18px; flex-wrap: wrap;}
+            .bottom>*{padding: 8px; margin: 8px;}
+
+            .main{width: 90%;}
+
+            .landing{flex-direction: column;margin: 128px 0 0 0; height: auto;}
+            
+            .desc{flex-direction: column-reverse;width: 90vw;}
+            .desc>.text{width: 100%; border: none; text-align: right;}
+            .desc>.text>*{padding: 8px;}
+
+            .desc>.video{width: 90vw; height: 50vh; margin: 32px 0 32px 0;}
             
         }
     </style>

@@ -41,8 +41,24 @@
 
         footer{margin: 64px 0 0 0;}
 
+        .phone{display: none;}
 
         @media screen and (max-width:100vh) {
+            .desktop{display: none;}
+            .phone{display: flex;}
+
+            header>.top{flex-direction: column; font-size: 18px;}
+            html{font-size: 18px;}
+            .top>svg{display: none;}
+            .bottom{width: 90%; font-size: 18px; flex-wrap: wrap;}
+            .bottom>*{padding: 8px; margin: 8px;}
+
+            .main{width: 90%;}
+            .landing{margin: 128px 0 0 0; width: 90vw;}
+
+            img{width: 90vw;}
+
+
             
         }
     </style>

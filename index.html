@@ -46,10 +46,29 @@
         a:any-link{text-decoration: none; color: inherit}
         a:hover{opacity: 0.62;}
 
-
+        .phone{display: none;}
 
         @media screen and (max-width:100vh) {
+            .desktop{display: none;}
+            .phone{display: flex;}
+
+            header>.top{flex-direction: column; font-size: 18px;}
+            .top>svg{display: none;}
+            .bottom{width: 90%; font-size: 18px; flex-wrap: wrap;}
+            .bottom>*{padding: 8px; margin: 8px;}
             
+            .landing{flex-direction: column;margin: 128px 0 0 0;}
+
+            .about.phone{flex-direction: column; width: 100%;}
+            .phone.about>*{width: 100%;}
+
+            .contact{flex-direction: column-reverse;margin: 16px; align-items: center; justify-content: space-around;}
+            .contact>.map{width: 90vw;}
+            .contact>form{width: 90vw;}
+            .contact>.desc{ padding: 0;}
+            .contact>form>*{width: 80vw;}
+
+            .link{flex-direction: column;}
         }
     </style>
     <header>
@@ -84,7 +103,7 @@
                 </clipPath>
                 </defs>
                 </svg>
-                <a href="mailto:info@azimutelematika.ru">info@azimutelematika.ru</a>
+            <a href="mailto:info@azimutelematika.ru">info@azimutelematika.ru</a>
         </div>
     </header>
     <div class="bottom">
@@ -103,11 +122,17 @@
                 <a href="contact/">ЗАКАЗАТЬ</a>
             </div>
         </div>
-        <div class="about">
+        <div class="about desktop">
             <div class="image" style="background-image: url(2.png);"></div>
             <div class="image" style="background-image: url(6.png);"></div>
             <div class="image" style="background-image: url(3.png); margin: 64px 0 64px;"></div>
             <div class="image" style="background-image: url(4.png); height: 256px; margin: 64px 0 64px;"></div>
+        </div>
+        <div class="about phone">
+            <div class="image" style="background-image: url(m4.png); height: 512px;"></div>
+            <div class="image" style="background-image: url(m3.png); height: 512px;"></div>
+            <div class="image" style="background-image: url(m1.png); height: 512px;"></div>
+            <div class="image" style="background-image: url(m2.png); height: 512; margin: 64px 0 64px;"></div>
         </div>
         <div class="contact">
             <form class="desc">

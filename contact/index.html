@@ -45,8 +45,35 @@
         footer{margin: 64px 0 0 0;}
 
 
+        .phone{display: none;}
+
         @media screen and (max-width:100vh) {
+            .desktop{display: none;}
+            .phone{display: flex;}
+
+            header>.top{flex-direction: column; font-size: 18px;}
+            html{font-size: 18px;}
+            .top>svg{display: none;}
+            .bottom{width: 90%; font-size: 18px; flex-wrap: wrap;}
+            .bottom>*{padding: 8px; margin: 8px;}
+
+            .main{width: 90%;}
+
+            .landing{flex-direction: column;margin: 128px 0 0 0; height: auto;}
             
+            .desc{flex-direction: column-reverse;width: 90vw;}
+            .desc>.text{width: 100%; border: none; text-align: right;}
+            .desc>.text>*{padding: 8px;}
+
+            .desc>.video{width: 90vw; height: 50vh; margin: 32px 0 32px 0;}
+            
+            .contact{flex-direction: column-reverse;margin: 16px; align-items: center; justify-content: space-around;}
+            .contact>.map{width: 90vw;}
+            .contact>form{width: 90vw;}
+            .contact>.desc{ padding: 0;}
+            .contact>form>*{width: 80vw;}
+            
+            .link{flex-direction: column;}
         }
     </style>
     <header>
