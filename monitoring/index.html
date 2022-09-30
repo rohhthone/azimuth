@@ -40,6 +40,10 @@
 
         .phone{display: none;}
 
+        .app{width: 100%; display: flex; align-items: center; justify-content: space-around;}
+            .app>a{padding: 16px;}
+            .app>a>img{width: 72px; height: 72px;}
+
         @media screen and (max-width:100vh) {
             .desktop{display: none;}
             .phone{display: flex;}
@@ -52,13 +56,19 @@
 
             .main{width: 90%;}
 
-            .landing{flex-direction: column;margin: 128px 0 0 0; height: auto;}
+            .landing{flex-direction: column;margin: 128px 0 0 0; height: auto; text-align: center;}
+            .landing>.title{width: 90vw; display: flex; flex-direction: column; align-items: center;}
+            .landing>.title>*{width: 90vw; text-align: left;}
             
             .desc{flex-direction: column-reverse;width: 90vw;}
             .desc>.text{width: 100%; border: none; text-align: right;}
-            .desc>.text>*{padding: 8px;}
+            .desc>.text>*{padding: 8px; width: 100%; text-align: left;}
 
             .desc>.video{width: 90vw; height: 50vh; margin: 32px 0 32px 0;}
+
+            .app{width: 100%; display: flex; align-items: center; justify-content: space-around;}
+            .app>a{padding: 16px;}
+            .app>a>img{width: 72px; height: 72px;}
             
         }
     </style>
@@ -107,13 +117,18 @@
     </div>
     <div class="main">
         <div class="landing">
-            <div class="title"><h1>Мониторинг</h1><h2>система постоянного наблюдения за транспортными средствами в режиме реального времени.</h2></div>
+            <div class="title">
+                <h1>Мониторинг</h1>
+                <a href="hosting.wialon.com" style="text-decoration:underline; color:#33f;">Ссылка на сайт мониторинга ...</a>
+                <h2>система постоянного наблюдения за транспортными средствами в режиме реального времени.</h2>
+            </div>
             <div class="desc">
                 <div class="text">
                     <h2>Возможности системы</h2>
                     <p>Онлайн GPS / Глонасс мониторинг<br>
                         Контроль уровня / расход топлива<br>
-                        Дистанционная блокировка двигателяАнализ параметров CAN - шины, датчиков,доп. оборудования<br>
+                        Дистанционная блокировка двигателя<br>
+                        Анализ параметров CAN - шины, датчиков, доп. оборудования<br>
                         Контроль территорий<br>
                         Контроль качества вождения<br>
                         Видеомониторинг</p>
@@ -123,6 +138,11 @@
                 </div>
             </div>
         </div>
+        <div class="app">
+            <a href="https://apps.apple.com/ru/app/wialon/id960699792"><img src="../appstore.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/details?id=com.gurtam.wialon_client&hl=ru&gl=US"><img src="../playmarket.png" alt=""></a>
+        </div>
+
     </div>
     <footer style="height: 64px; width:100%; background-color: #000; display: flex; align-items: center; justify-content: center; text-indent: 8px; font-size:18px"><a href="https://rohhthone.com/privacy" style=" color: #fff;">privacy</a><a href="https://rohhthone.com" style=" color: #fff;"> by rohh thone</a></footer>
 </body>
