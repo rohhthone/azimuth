@@ -27,22 +27,15 @@
         h2{font-weight: 300; font-size: 1.2em;}
 
         *{margin: 0; padding: 0;}
-        html{width: 100%; font-family: montserrat; font-size: 18px;}
+        html{width: 100%; font-family: montserrat; font-size: 18px; scroll-behavior: smooth;}
         body{display: flex; align-items: center; justify-content: space-around; flex-direction: column; max-width: 100%;}
 
-        header{height: 48px; width: 100%; display: flex; flex-direction: column;}
-        header>.top{background-color: #000; width: 100%; height: 100%;align-items: center;justify-content: space-around; display: flex; color: #fff;}
+        
         header>.top>a{width: 40%; display: block;}
-        .bottom>p{position: relative;}
-        .bottom>p::after {position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; right: 0; width: 100%; background: #3333FF;}
-        .bottom{display: flex; justify-content: space-between; width: 80%;align-items: center;height: 32px;}
-        .bottom>a{position: relative;}
-        .bottom>a::after{position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; right: 0; width: 0%; background: #3333FF;}
-        .bottom>a:hover::after{position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; width: 100%; background: #3333FF; transition: 0.5s;}
-
+        
         .main{display: flex; align-items: center; width: 80%; justify-content: space-around; flex-direction: column;}
 
-        .landing{height: 62vh; width: 100%; display: flex; justify-content: space-between; margin: 64px 0 0 0;}
+        .landing{height: 62vh; width: 100%; display: flex; justify-content: space-between;}
         .landing>.img{height: 512px; width: 60%; background-position: center; background-size: contain; background-repeat: no-repeat;}
         .landing>.title{height: 100%; display: flex; flex-direction: column; justify-content: space-around;}
         .title>a{width: 80%; padding:16px; display: flex; align-items: center; justify-content: space-around; border: #3333FF double 5px; border-radius: 16px;}
@@ -87,13 +80,34 @@
             .contact>form>*{width: 80vw;}
 
             .link{flex-direction: column;}
-
+            header{position: absolute;}
             
         }
+
+        .module.contact.N0002{display: flex; flex-direction: column; align-items: flex-start; justify-content: center; width: auto; height: 100%; margin: 0;}
+        .module.contact.N0002>a{font-size: 18px;}
+        .module.contact.N0002>p{font-size: 18px;}
+        header{height: auto; width: 100%; display: flex; flex-direction: column; position: fixed; top: 0; left: 0; align-items: center;}
+        header>.top{background-color: #000; width: 100%; height: 100%; display: flex; color: #fff; align-items: center; justify-content: center; gap: 5em;}
+
+        .bottom{display: flex; justify-content: space-between; width: 80%;align-items: center;height: 32px;}
+        .bottom>p{position: relative;}
+        .bottom>p::after {position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; right: 0; width: 100%; background: #3333FF;}
+        .bottom{display: flex; justify-content: space-between; width: 80%;align-items: center;height: 32px;}
+        .bottom>a{position: relative;}
+        .bottom>a::after{position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; right: 0; width: 0%; background: #3333FF;}
+        .bottom>a:hover::after{position: absolute; content: ''; height: 2px; bottom: -4px;  margin: 0 auto; left: 0; width: 100%; background: #3333FF; transition: 0.5s;}
+
+
+        h1>strong{font-size: 48px;}
     </style>
     <header>
         <div class="top">
-            <a href="tel:+79210945180">+7 921 094 51 80</a>
+            <div class="module contact N0002" style="padding: 1em 0">
+                <!-- <a href="mailto:info@azimutelematika.ru">info@azimutelematika.ru</a> -->
+                <a href="tel:+79210945180">+7 921 094 51 80</a>
+                <p>с 9:00 до 18:00 ежедневно</p>
+            </div>
             <svg width="32" height="32" viewBox="0 0 280 268" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_70_2465)">
             <path d="M89.2575 154.571C87.9432 155.943 86.6289 157.2 85.3146 158.571C87.486 159.086 89.7146 159.657 91.886 160.171C90.9146 158.343 90.0003 156.514 89.2575 154.571ZM89.2575 154.571C87.9432 155.943 86.6289 157.2 85.3146 158.571C87.486 159.086 89.7146 159.657 91.886 160.171C90.9146 158.343 90.0003 156.514 89.2575 154.571ZM139.657 66.9714C109.029 67.1429 83.3718 87.7143 75.486 115.829C73.886 121.657 72.9718 127.886 73.0289 134.286C73.1432 152.914 80.8003 169.714 93.1432 181.771C105.315 193.714 122 200.971 140.343 200.857C163.657 200.743 184.115 188.743 195.943 170.629C198.857 166.343 201.143 161.771 202.915 156.857C205.543 149.6 206.972 141.714 206.915 133.6C206.743 96.5714 176.629 66.8 139.6 66.9714H139.657ZM140.286 188.686C131.6 188.686 123.257 186.686 115.886 183.086C105.715 178.114 97.3146 170.057 91.886 160.114C90.9146 158.286 90.0003 156.457 89.2575 154.514C86.686 148.286 85.2575 141.314 85.2003 134.171C85.1432 119.943 90.5146 106.857 99.4289 97.0857C109.372 86.0572 123.657 79.2 139.715 79.0857C155.772 78.9714 170.8 86.1143 180.857 97.4286C189.486 107.029 194.743 119.714 194.8 133.6C194.857 145.371 191.2 156.286 184.915 165.2C175.143 179.314 158.8 188.571 140.286 188.686ZM89.2575 154.571C87.9432 155.943 86.6289 157.2 85.3146 158.571C87.486 159.086 89.7146 159.657 91.886 160.171C90.9146 158.343 90.0003 156.514 89.2575 154.571Z" fill="white"/>
@@ -123,25 +137,23 @@
                 </clipPath>
                 </defs>
                 </svg>
-            <a href="mailto:info@azimutelematika.ru" style="text-align: right;">info@azimutelematika.ru</a>
+            
+        </div>
+        <div class="bottom">
+            <p>Главная</p>
+            <a href="monitoring/">Мониторинг</a>
+            <a href="type/">Сферы применения</a>
+            <a href="pp2216/">ПП 2216</a>
+            <a href="pp909/">ПП 969</a>
+            <a href="rnis/">РНИС</a>
+            <a href="contact/">Контакты</a>
         </div>
     </header>
-    <div class="bottom">
-        <p>Главная</p>
-        <a href="monitoring/">Мониторинг</a>
-        <a href="pp2216/">ПП 2216</a>
-        <a href="pp909/">ПП 969</a>
-        <a href="rnis/">РНИС</a>
-        <a href="contact/">Контакты</a>
-    </div>
     <div class="main">
-        <div class="landing" style="gap:2em;">
+        <div class="landing" style="gap:2.5em; margin-top: 20vh;">
             <div class="img" style="background-image: url(0.png);"></div>
             <div class="title">
-                <h1 style="font-size: 1.4em">
-                    От <strong>4800</strong> установка блока мониторинга <br>
-                    И <strong>24900</strong> полное сопровождение эра Глонасс ПП2216
-                </h1>
+                <h1>Подключение системы навигации <strong style="color:#1e47b6">Wialon</strong></h1>
                 <a href="contact/">ЗАКАЗАТЬ</a>
             </div>
         </div>
@@ -187,9 +199,35 @@
                 <div class="logo" style="background-image: url(Frame.png);"></div>
             </div>
         </div>
+        <style>
+            .about{width: 80vw; height: auto; display: flex; align-items: center; flex-direction: row; margin: 64px 0 0 0; font-size: 20px;}
+            .about>form{width: 50%; height: auto; display: flex; align-items: center; flex-direction: column; justify-content: center; box-sizing: border-box; padding: 32px;}
+            .about>form>h2{font-size: 32px; margin: 0 0 8px 0;}
+            .about>form>p{margin: 0 0 32px 0; opacity: 0.6;}
+            .about>form>input{width: 100%; height: 48px; box-sizing: border-box; padding: 0 16px; border: 2px solid #222; border-radius: 8px; margin: 8px 0 0 0;}
+            .about>form>input[type="submit"]{background-color: #3333FF; color: #fff; cursor: pointer; color: #fff; font-weight: 600; font-size: 16px; transition: .4s;}
+            .about>form>input[type="submit"]:hover{background-color: #222; color: #fff; transition: .4s;}
+            .about>img{width: 50%; height: auto; display: flex; align-items: center; flex-direction: column; justify-content: center; box-sizing: border-box; padding: 32px;}
+
+
+            @media screen and (max-width:100vh) {
+                .about{width: 90vw; flex-direction: column;}
+                .about>form{width: 100%;}
+                .about>.image{width: 100%;}
+            }
+
+        </style>
         <div class="about">
-            <div class="image desktop" style="background-image: url(6.png);"></div>
-            <div class="image phone" style="background-image: url(m3.png); height: 512px;"></div>
+            <!-- <div class="image desktop" style="background-image: url(6.png);"></div>
+            <div class="image phone" style="background-image: url(m3.png); height: 512px;"></div> -->
+            <form action="#" method="post" name="form1">
+                <h2>Оставьте заявку</h2>
+                <p>и мы свяжемся с вами в ближайшее время</p>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="text" name="phone" placeholder="Ваш телефон" required>
+                <input type="submit" value="Отправить" name="submit">
+            </form>
+            <img src="navtelecom-smart.png" alt="">
         </div>
         <div class="advantage">
             <h2>Преимущества</h2>
@@ -233,6 +271,26 @@
                 <p>Полное сопровождение ПП2216(ЭРА-ГЛОНАСС)<br> Подача документов+регистрация в системе + установка АСН + идентификация.</p>
             </div>
         </div>
+        <style>
+            .type-link{
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #fff !important;
+                background-color: #33f;
+                padding: 16px;
+                border-radius: 16px;
+                margin: 32px auto;
+                width: 50%;
+                transition:.5s
+            }
+            .type-link:hover{
+                background-color: #55f;
+                transition:.5s
+            }
+        </style>
+        <a href="type/" class="type-link">Сферы применения</a>
+        <h2 style="font-weight: 600; font-size: 2em; padding: 2em 0 0 0;">Сделать заказ</h2>
         <div class="contact">
             <form class="desc">
                 <input type="text" name="title" id="title" placeholder="заголовок">

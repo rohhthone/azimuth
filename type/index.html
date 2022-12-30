@@ -1,0 +1,176 @@
+<html lang='ru'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+    <title>Сферы применения | Азимут Телематика</title>
+    <link rel='stylesheet' href='https://rohh.ru/API/style/void.css'/>
+    <link rel='stylesheet' href='https://rohh.ru/API/style/module.css'/>
+    <meta name='description' content='Сфера применения устанавливаемого мониторинга'/>
+    <meta name='developer' content='Rohh Thone'/>
+    <meta name='designer' content='Rohh Thone'/>
+    <meta name='owner' content='Дмитрий Владимирович'/>
+    <meta name='keywords' content='сфера, применения, мониторинг'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <meta name='theme-color' content='#FFF'/>
+  </head>
+  <body>
+    <style>
+    </style>
+    <main>
+				
+
+			
+			<style>
+
+				body {
+					margin: 5rem 0 0 0;
+					padding: 0;
+					font-family: sans-serif;
+				}
+
+				h1{
+					text-align: center;
+					margin: 0;
+					padding: 2rem 0 1rem 0;
+					font-size: 2rem;
+					text-transform: capitalize;
+
+				}
+
+				.container {
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					grid-gap: 10px;
+					grid-auto-rows: minmax(100px, auto);
+					width: 80vw;
+					margin: 0 auto;
+					background-color: #eee;
+					padding: 10px;
+				}
+
+				.item {
+					background: #fff;
+					padding: 20px;
+					border-radius: 5px;
+				}
+
+				@media screen and (max-width: 768px) {
+					.container {
+						grid-template-columns: repeat(2, 1fr);
+					}
+				}
+
+			</style>
+
+							<style>
+			.module.toolbar.N0001 {display: flex; flex-direction: row; align-items: center; justify-content: flex-start; width: 100%; height: auto; background-color: #FFF8; color: #000; position: fixed; top: 0; left: 0; z-index: 1000; padding: 1em; backdrop-filter: blur(2px);}
+			.module.toolbar.N0001 > i.icon > img {width: 2rem; height: 2rem; opacity: .6;}
+			.module.toolbar.N0001 > i.icon {margin: 0; padding: 0; width: 3em; height: 3em; display: flex; align-items: center; justify-content: center; border-radius: 25%;}
+			.module.toolbar.N0001 > i.icon:hover {transition: .75s; box-shadow: 0 0 8px #1114; border-radius: 50%; animation: pulse 1.4s infinite; cursor: pointer;}
+			.module.toolbar.N0001 > i.icon:hover > img {transition: .5s; opacity: .9;}
+			
+				@keyframes pulse {
+					0% {transform: scale(1);}
+					50% {transform: scale(1.05); box-shadow: 0 0 16px #1114;}
+					100% {transform: scale(1);}
+				}
+			</style>
+			<div class='module toolbar N0001'>
+				<i class='icon'><img src='https://rohh.ru/API/icon/N0002/arrow-round.svg' alt='Back Icon' style='transform: scale(-1);' onclick='back()'></i>
+				<i class='icon'><img src='https://rohh.ru/API/icon/N0002/home%20round.svg' alt='Home Icon' onclick='root()'></i>
+			</div>
+			<script>
+				function back() {
+					window.history.back();
+				}
+				function root() {
+					var rootPage;
+					// find hostname in url
+					rootPage = window.location.href.split('/')[2];
+					// open root page
+					window.location.href = 'https://' + rootPage;
+				}
+			</script>
+
+			<H1>сфера применения</H1>
+			<div class="container grid">
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/4cc.jpg" alt="">
+					<h3>Контроль выдачи ГСМ</h3>
+					<p>Организация дозированной выдачи на топливозаправщике или мини-АЗС</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/tractor.png" alt="">
+					<h3>Сельское хозяйство</h3>
+					<p>Точное земледелие, контроль всех этапов работы сельхозтехники</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/train.png" alt="">
+					<h3>ЖД транспорт</h3>
+					<p>Контроль и мониторинг движения поездов, контроль фактического расхода топлива</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/delivery.png" alt="">
+					<h3>Службы логистики</h3>
+					<p>Контроль работы мобильных сотрудников и всех этапов работы службы доставки</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/stroy.png" alt="">
+					<h3>Строительная техника</h3>
+					<p>Мониторинг транспорта с контролем навесного оборудования, контроль расхода топлива</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/ship.png" alt="">
+					<h3>Водный транспорт</h3>
+					<p>Спутниковый контроль судов в условиях отсутствия GPRS, голосовая связь</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/ambulance.png" alt="">
+					<h3>Скорая помощь</h3>
+					<p>Автоматизированная система обработки вызовов и управления бригадами скорой помощи</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/noun_559816_cc.jpg" alt="">
+					<h3>Горная логистика</h3>
+					<p>Автоматизация ключевых процессов горноразрабатывающего предприятия</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/oiltruck.png" alt="">
+					<h3>Опасные грузы</h3>
+					<p>Контроль скорости, соблюдения маршрутов, отправка данных в надзорные органы</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/children.png" alt="">
+					<h3>Школьные автобусы</h3>
+					<p>Контроль перевозок учащихся, соблюдения маршрутов, расхода топлива</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/bus.png" alt="">
+					<h3>Пассажирский транспорт</h3>
+					<p>Система управления пассажирским транспортом и информированием пассажиров</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/snow_groomer.png" alt="">
+					<h3>Транспорт ЖКХ</h3>
+					<p>Автоматизация дистанционного контроля за работой транспортных средств ЖКХ</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/oil.png" alt="">
+					<h3>Нефтяная отрасль</h3>
+					<p>Контроль транспортировки нефти и газа в режиме реального времени, спутниковая связь</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/taxi.png" alt="">
+					<h3>Такси</h3>
+					<p>Мониторинг транспорта, контроль расхода топлива и планирование маршрутов</p>
+				</div>
+				<div class="item">
+					<img src="https://spb.ssm22.ru/wp-content/uploads/2016/09/truck.png" alt="">
+					<h3>Грузоперевозки</h3>
+					<p>Система спутникового контроля и мониторинга грузоперевозок</p>
+				</div>
+
+			</div>
+
+    </main>
+  </body>
+</html>
