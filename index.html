@@ -137,9 +137,38 @@
                 </clipPath>
                 </defs>
                 </svg>
+                <style>
+                    #menu {
+                        width: 100%;
+                        height: 100%;
+                        fill: #fff;
+                    }
+                    #menu:hover {
+                        fill: #bbb;
+                        transition: 0.5s;
+                        cursor: pointer;
+                    }
+                    @media (max-width: 768px) {
+                        .desktop{display: none !important;}
+                        body > div > div.about > img{width: 100% ;}
+                        body > div > div.landing > div.title > h1{font-size: 1.9rem; text-align: center; margin-bottom:1em;}
+                        body > div > div.landing{margin-top: 128px;}
+                        body > header > div.top{height: min-content !important;}
+                        body > header > div.bottom.desktop.active{display: flex !important; background-color: #FFF !important; z-index: 2;}
+                        body > header > div.bottom.desktop.active > a{background-color: #FFF; z-index: 3;}
+                    }
+                </style>
+                <i style="width:48px; aspect-ratio: 1/1;" class="phone" id="openmenu">
+                    <?xml version="1.0" encoding="UTF-8"?><svg id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><rect id="void" width="72" height="72" fill="none"/><rect id="line-b" x="12" y="48" width="48" height="8" rx="2" ry="2"/><rect id="line-m" x="12" y="32" width="48" height="8" rx="2" ry="2"/><rect id="line-u" x="12" y="16" width="48" height="8" rx="2" ry="2"/></svg>
+                </i>
+                <script>
+                    document.getElementById("openmenu").addEventListener("click", function() {
+                        document.querySelector(".bottom.desktop").classList.toggle("active");
+                    });
+                </script>
             
         </div>
-        <div class="bottom">
+        <div class="bottom desktop">
             <p>Главная</p>
             <a href="monitoring/">Мониторинг</a>
             <a href="type/">Сферы применения</a>
