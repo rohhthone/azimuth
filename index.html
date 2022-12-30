@@ -153,9 +153,12 @@
                         body > div > div.about > img{width: 100% ;}
                         body > div > div.landing > div.title > h1{font-size: 1.9rem; text-align: center; margin-bottom:1em;}
                         body > div > div.landing{margin-top: 128px;}
-                        body > header > div.top{height: min-content !important;}
-                        body > header > div.bottom.desktop.active{display: flex !important; background-color: #FFF !important; z-index: 2;}
+                        body > header {}
+                        body > header > div.top{height: min-content !important; flex-direction: row; justify-content: center; align-items: center; gap: 0}
+                        body > header > div.top > div{min-width: 70%}
+                        body > header > div.bottom.desktop.active{display: flex !important; background-color: #FFF !important; z-index: 2; height: min-content;}
                         body > header > div.bottom.desktop.active > a{background-color: #FFF; z-index: 3;}
+                        i{min-width: 48px;}
                     }
                 </style>
                 <i style="width:48px; aspect-ratio: 1/1;" class="phone" id="openmenu">
